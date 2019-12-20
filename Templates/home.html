@@ -1,0 +1,244 @@
+{% load static %}
+{% load imagefit %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title> Itekeng Lodge | Welcome </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/bootstrap-reboot.min.css' %}">
+
+    <script src="https://kit.fontawesome.com/14d1f2e04d.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+    <script src="{% static 'js/jq/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/jq/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+	<script src="{% static 'js/jq-easing/jquery.easing.min.js' %}"></script>
+	<script src="{% static 'js/scrolling-nav.js' %}"></script>
+
+
+</head>
+<body>
+
+	{% include 'navbar.html' %}
+
+	<header class="bg-primary text-white" style="padding: 250px 0 100px">
+    <div class="container text-center">
+      <h1>Itekeng Lodge</h1>
+      <p class="lead">Where Business meets tranqulity</p>
+    </div>
+  </header>
+
+  <section id="services" class="bg-light" style="padding: 100px 0">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h1 style="text-align: center;" class="section-title">Services</h1>
+          <br>
+          <br><br><br><br>
+        </div>
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i class="fas fa-wifi fa-4x"></i></span>
+            <p>Wifi</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i class="fas fa-chart-line fa-4x"></i></span>
+            <p>Conference Rooms</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i class="far fa-handshake fa-4x"></i></i></span>
+            <p>Workshop Facilities</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i class="fas fa-dumbbell fa-4x"></i></span>
+            <p>24 Hour Gym</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+  	<section id="about">
+    <div class="container">
+      <div class="center">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>About Us</h2>
+          <hr>
+          <p class="lead">Based in Kasane, We offer deals to individuals and companies from across the world</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 wow fadeInRight">
+          <img src="{% static 'img/jumbotron5.jpg' %}" class="img-responsive"  style="height: 400px; width: 500px;"/>
+          <p>Based in Kasane, We offer deals to individuals and companies from across the world</p>
+
+        </div>
+        <!--/.col-sm-6-->
+
+        <div class="col-sm-6 wow fadeInDown">
+          <div class="accordion">
+            <div class="panel-group" id="accordion1">
+              <div class="panel panel-default">
+                <div class="panel-heading active">
+                  <h3 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                      Founded
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+                  </h3>
+                </div>
+
+                <div id="collapseOne1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <div class="media accordion-inner">
+                      <div class="media-body">
+                        <p>In 2005 By Rre Thata Itekeng and his loving family</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                      4 Star
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseTwo1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>We offer quality services to suit all of customers from great scenery to  great facilities</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                      Free Services
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseThree1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>We offer free high speed internet, swimming facilities and 24 hour gym for all our customers who </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/#accordion1-->
+          </div>
+        </div>
+
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.container-->
+  </section>
+
+<section id="about">
+    <div class="container">
+      <div class="center">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+              aria-selected="true">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+              aria-selected="false">Workshops</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+              aria-selected="false">Conferences</a>
+          </li>
+        </ul>
+
+<div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+              <div class="col">
+                <p>We offer 5 en-suite single / double rooms for those  just looking for an overnight bed or those on a tight budget and we have another 5 executive en-suite rooms that overlook our gardens and the ever-so-soothing sanctuary</p>
+                <p>from $50 / night </p>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'bookings' %}">Find Out More</a>
+              </div>
+              <div class="col">
+                <img src="{% static 'img/jumbotron5.jpg' %}" class="img-responsive"  style="height: 200px; width: 400px;"/>
+              </div>
+            </div>
+
+              </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row">
+              <div class="col">
+                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip uis cardigan american apparel, butcher voluptate nisi qui.
+              </div>
+              <div class="col">
+                <img src="{% static 'img/jumbotron5.jpg' %}" class="img-responsive"  style="height: 200px; width: 400px;"/>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Etsy mixtape
+            wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack
+            lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
+            locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify
+            squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie
+            etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog
+            stumptown. Pitchfork sustainable tofu synth chambray yr.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="maps" style="padding: 5px 0">
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=sedudu%20road%2C%20Kasane&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com">the what what</a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+  </section>
+
+
+  <!-- Footer -->
+  {% include 'footer.html' %}
+  
+
+
+
+
+</body>
+</html>
